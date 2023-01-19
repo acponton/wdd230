@@ -1,5 +1,5 @@
 body {
-    width: 30%;
+    width: 40%;
     /* align-items: center; */
     margin: 0 auto;
 }
@@ -23,7 +23,7 @@ body {
 }
 #student-name {
     color: white;
-    font-size: 1.3em;
+    font-size: 1.2em;
     grid-column: 2/3;
     grid-row: 1/2;
     text-align: center;
@@ -40,12 +40,12 @@ footer {
     text-align: center;
     border-radius: 15px;
 }
-#author{
+#copyright{
     color: white;
     padding-top: 0.5cm;
     font-family: 'Courier New', Courier, monospace;
 }
-#updated_time{
+#last-update{
     color: yellow;
     padding-bottom: 0.5cm;
     font-family: 'Courier New', Courier, monospace;
