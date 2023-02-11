@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css?family=Sofia");
+
+main {
+    text-align: center;
+}
+
+header img {
+max-width : 300px;
+padding-right: 0.5in;
+padding-left: 1in;
+}
+header {
+display : flex;
+background-color : #007ea7;
+color : white;
+font-family : "sofia", sans-serif;
+padding-top : 1rem;
+padding-bottom : 1rem;
+}
+header h1{
+    font-size: 1.5cm;
+    font-weight: bold;
+    text-align: right;
+}
+header h2{
+    font-size: 0.8cm;
+    text-align: right;
+}
+nav {
+display : flex;
+/* flex-direction : column; */
+background-color : #007ea7;
+text-align : center;
+box-shadow : 0 0 20px #1D1D1D;
+max-width : 95%;
+margin : 0 auto;
+margin-top : 0.5rem;
+}
+
+nav div {
+flex : 1 1 auto;
+}
+nav a {
+display : block;
+color : white;
+text-align : center;
+padding : 15px;
+/* text-decoration : none; */
+font-size : 20px;
+}
+nav a:hover {
+background-color : #80ced7;
+color : white;
+}
+
+.content h3 {
+text-align : center;
+font-family : 'Times New Roman', Times, serif;
+color : navy;
+padding : 20px;
+padding-bottom : 0;
+margin-bottom : 10px;
+font-size : 44px;
+text-decoration: underline;
+}
+.content p {
+font-family : 'Times New Roman', Times, serif;
+font-size : 30px;
+margin-left : 100px;
+margin-right : 100px;
+line-height : 1.5;
+padding : 2rem;
+text-align : center;
+color: navy;
+}
+footer {
+background-color : #007ea7;
+padding : 1rem;
+color : white;
+text-align : center;
+margin-top : 150px;
+}
+/* ------------------------------------------------------------------------------------------------ */
+
+:root {
+   
+    --primary-color: #ccdbdc   ;
+    --secondary-color: #9AD1D4 ;
+    --accent1-color: #80CED7;
+    --accent2-color: #007EA7;
+    --accent3-color: #003249;
+  
+  
+    --heading-font: "Sofia";
+    --paragraph-font: "Times New Roman";
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #007ea7;  /* headlines on a white background */ 
+    --headline-color-on-color: white; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #007ea7; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #007ea7;
+    --nav-link-color: #007ea7;
+    --nav-background-color: #e7c24f;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #007ea7;
+  }
+
+h3, h4, h5, h6, h7, h8 {
+font-family: 'Times New Roman', Times, serif;
+color: var(--headline-color-on-white);
+font-size: 25px;
+text-align: center;
+}
+
+hr {
+height: 3px;
+margin: 35px 0;
+background: var(--accent1-color);
+}
+header {
+padding: 1em;
+text-align: center;
+color: var(--headline-color-on-color);
+background-color: var(--paragraph-background-color);
+}
+header > h1, header > h2 {
+color: var(--headline-color-on-color);
+}
+p {
+font-family: var(--paragraph-font);
+color: var(--paragraph-color-on-white);
+padding: 1em;
+width: 90%;
+font-size: 25px;
+text-align: center;
+margin: 0 auto;
+}
+.colors {
+width: 100%;
+min-width: 350px;
+margin: 30px auto;
+text-align: center;
+align-items: center;
+}
+.colors th {
+background-color: #999;
+}
+.colors td{
+width: 25%;
+height: 3em;
+}
+
+.primary {
+background-color: var(--primary-color);
+}
+.secondary {
+background-color: var(--secondary-color);
+}
+.accent1 {
+background-color: var(--accent1-color);
+}
+.accent2{
+background-color: var(--accent2-color);
+}
+
+p.colored {
+background-color: var(--paragraph-background-color);
+color: var(--paragraph-color-on-color);
+width: 90%;
+font-size: 25px;
+text-align: center;
+margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+/* .scenarios {
+text-align : center;
+list-style-position : inside;
+border : #1D1D1D solid 2px;
+font-family : 'Merriweather', serif;
+}
+.scenarios ul {
+line-height : 1.75em;
+}
+.scenarios h2 {
+font-size : 40px;
+}
+.tablesiteheader {
+background-color : #054E8F;
+color : white;
+}
+.typography {
+margin-left : auto;
+margin-right : auto;
+}
+.tablesiteheadersample {
+color : white;
+background-color : #054E8F;
+font-family : 'Roboto', sans-serif;
+font-size : 32px;
+}
+.tablenavcolor {
+background-color : #054E8F;
+color : white;
+}
+.tablenavsample {
+font-size : 0.9rem;
+font-family : 'Roboto', sans-serif;
+background-color : #054E8F;
+color : white;
+}
+.tableh1 {
+color : #1D1D1D;
+}
+.tableh1sample {
+font-size : 44px;
+color : #1D1D1D;
+font-family : 'Merriweather', serif;
+}
+.tableh2sample {
+font-size : 40px;
+color : #1D1D1D;
+font-family : 'Merriweather', serif;
+}
+.tableh3sample {
+font-size : 22px;
+color : #1D1D1D;
+font-family : 'Merriweather', serif;
+}
+.tablepsample {
+font-size : 16px;
+color : #1D1D1D;
+font-family : 'Times New Roman', serif;
+}
+@media (min-width: 37.5em) {
+nav {
+flex-direction : row;
+}
+}
+nav a {
+font-size : 1.1rem;
+}
+@media (min-width: 48em) {
+nav a {
+font-size : 1.3rem;
+}
+}
+@font-face {
+font-family : 'Merriweather';
+font-style : normal;
+font-weight : 400;
+font-display : swap;
+src : url(https://fonts.gstatic.com/s/merriweather/v30/u-440qyriQwlOrhSvowK_l5Oew.ttf) format('truetype');
+}
+@font-face {
+font-family : 'Roboto';
+font-style : normal;
+font-weight : 100;
+font-display : swap;
+src : url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgWxP.ttf) format('truetype');
+}
+@font-face {
+font-family : 'Roboto';
+font-style : normal;
+font-weight : 400;
+font-display : swap;
+src : url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+} */
