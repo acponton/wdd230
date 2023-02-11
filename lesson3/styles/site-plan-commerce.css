@@ -65,7 +65,7 @@ text-decoration: underline;
 }
 .content p {
 font-family : 'Times New Roman', Times, serif;
-font-size : 30px;
+font-size : 25px;
 margin-left : 100px;
 margin-right : 100px;
 line-height : 1.5;
@@ -80,35 +80,15 @@ color : white;
 text-align : center;
 margin-top : 150px;
 }
+footer p{
+    font-size: 15px;
+    color: white;
+}
 /* ------------------------------------------------------------------------------------------------ */
-
-:root {
-   
-    --primary-color: #ccdbdc   ;
-    --secondary-color: #9AD1D4 ;
-    --accent1-color: #80CED7;
-    --accent2-color: #007EA7;
-    --accent3-color: #003249;
-  
-  
-    --heading-font: "Sofia";
-    --paragraph-font: "Times New Roman";
-  
-    /* these colors below should be chosen from among your palette colors above */
-    --headline-color-on-white: #007ea7;  /* headlines on a white background */ 
-    --headline-color-on-color: white; /* headlines on a colored background */ 
-    --paragraph-color-on-white: #007ea7; /* paragraph text on a white background */ 
-    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-    --paragraph-background-color: #007ea7;
-    --nav-link-color: #007ea7;
-    --nav-background-color: #e7c24f;
-    --nav-hover-link-color: white;
-    --nav-hover-background-color: #007ea7;
-  }
 
 h3, h4, h5, h6, h7, h8 {
 font-family: 'Times New Roman', Times, serif;
-color: var(--headline-color-on-white);
+color: #007ea7;
 font-size: 25px;
 text-align: center;
 }
@@ -116,20 +96,20 @@ text-align: center;
 hr {
 height: 3px;
 margin: 35px 0;
-background: var(--accent1-color);
+background: #80CED7;
 }
 header {
 padding: 1em;
 text-align: center;
-color: var(--headline-color-on-color);
-background-color: var(--paragraph-background-color);
+color: white;
+background-color: #007ea7;
 }
 header > h1, header > h2 {
-color: var(--headline-color-on-color);
+color: white;
 }
 p {
-font-family: var(--paragraph-font);
-color: var(--paragraph-color-on-white);
+font-family: 'Times New Roman', Times, serif;
+color: navy;
 padding: 1em;
 width: 90%;
 font-size: 25px;
@@ -152,36 +132,31 @@ height: 3em;
 }
 
 .primary {
-background-color: var(--primary-color);
+background-color: #ccdbdc;
 }
 .secondary {
-background-color: var(--secondary-color);
+background-color: #9AD1D4;
 }
 .accent1 {
-background-color: var(--accent1-color);
+background-color: #80CED7;
 }
 .accent2{
-background-color: var(--accent2-color);
+background-color: #007EA7;
+}
+.accent3{
+background-color: #003249;
 }
 
 p.colored {
-background-color: var(--paragraph-background-color);
-color: var(--paragraph-color-on-color);
+background-color: #007ea7;
+color: white;
 width: 90%;
 font-size: 25px;
 text-align: center;
 margin: 0 auto;
 }
 
-
-
-
-
-
-
-
-
-/* .scenarios {
+.scenarios {
 text-align : center;
 list-style-position : inside;
 border : #1D1D1D solid 2px;
@@ -190,7 +165,7 @@ font-family : 'Merriweather', serif;
 .scenarios ul {
 line-height : 1.75em;
 }
-.scenarios h2 {
+.scenarios h4 {
 font-size : 40px;
 }
 .tablesiteheader {
@@ -240,7 +215,8 @@ font-size : 16px;
 color : #1D1D1D;
 font-family : 'Times New Roman', serif;
 }
-@media (min-width: 37.5em) {
+
+/* @media (min-width: 37.5em) {
 nav {
 flex-direction : row;
 }
@@ -273,4 +249,4 @@ font-style : normal;
 font-weight : 400;
 font-display : swap;
 src : url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
-} */
+}  */
