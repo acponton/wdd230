@@ -49,8 +49,12 @@ footer {
     padding-bottom: 0.5cm;
     font-family: 'Courier New', Courier, monospace;
 }
+.my-name{
+    font-family: 'Poltawski Nowy', serif;
+}
 main h2{
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: 'Poltawski Nowy', serif;
     font-size: 1.5em;
     text-shadow: 0.1em 0.1em 0.2em #6f7364;
     border-bottom: solid gray;
@@ -62,7 +66,8 @@ main ul {
 }
 main p {
     color: gray;
-    font-family: 'Courier New', Courier, monospace cursive;
+    font-family: 'EB Garamond', serif;
+    /* font-family: 'Courier New', Courier, monospace cursive; */
     border-top: solid gray;
 }
 main ul a{
