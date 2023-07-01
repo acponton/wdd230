@@ -1,12 +1,9 @@
 
 
-function getCurrentDateAndTime() {
-    const dateTime = new Date();
-    return dateTime.toLocaleString();
-}
-const dateDisplay = document.getElementById("date-container");
-
-dateDisplay.innerHTML = getCurrentDateAndTime();
+const datefield = document.querySelector("time");
+const now = new Date();
+const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
+datefield.textContent = fulldate;
 
 const currentYear = new Date();
 let year = currentYear.getFullYear();
