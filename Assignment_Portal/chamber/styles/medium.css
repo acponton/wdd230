@@ -75,7 +75,7 @@
     }
 
 
-    .weather {
+    /* .weather {
         grid-column: 2/3;
         grid-row: 5;
         background-color: #80CED7;
@@ -87,6 +87,34 @@
         height: 100%;
         object-fit: cover;
         padding: 0;
+    } */
+
+
+    .weather {
+        grid-column: 2/3;
+        grid-row: 5;
+        background-color: #80CED7;
+        border: 1px solid black;
+        /* text-align: right; */
+    }
+    .weather h3{
+        font-size: 30px;
+        color: yellow;
+        text-align: center;
+    }
+    .weather img{
+        width: 40%;
+        padding: 0;
+        float: left;
+        margin-left: 0.5cm;
+    } 
+    .windChill{
+        text-align: left;
+        color: white;
+        font-size: 23px;
+        margin-top: 2.2in;
+        font-weight: bold;
+        margin-left: 1.5in;
     }
 
     

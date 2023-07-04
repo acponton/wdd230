@@ -18,7 +18,7 @@
         <nav>
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
                 <a id="logoHome" href="index.html">
-                    <img class="logoHome" src="images/logo.png" alt="CCC logo">
+                    <img class="logoHome" src="images/logo.webp" alt="CCC logo">
                 </a>
             <ul id="menuNav">
                 <li class="current"><a href="#">Home</a></li>
@@ -49,7 +49,13 @@
         <div class="gridContainer">
             <!-- <div class="hero"><p>Hero with site name and call to action</p></div> -->
             <div class="hero">
-                <img src="images/hero.jpg" alt="city of Countryside">
+                <picture>
+                    <!-- <img src="images/hero.jpg" alt="city of Countryside"> -->
+                    <source media="(max-width: 400px)" srcset="images/wdd230-org-small.jpg">
+                    <source media="(max-width: 800px)" srcset="images/wdd230-org-medium.jpg">
+                    <source media="(max-width: 1200px)" srcset="images/wdd230-org-large.jpg">
+                    <img src="images/wdd230-org.jpg" alt="meeting">
+                </picture>
                 <div class="hero-p">
                     <h2>Welcome</h2>
                     <button class="joinBtn" onclick="redirectToPage()">Join the Chamber</button>
@@ -63,7 +69,13 @@
                 <p><a href="#">more info...</a></p>
             </div>
             <div class="weather">
-                <img src="images/weather.jpg" alt="weather">
+                <h3>Weather</h3>
+                <img class="weather-img" src="images/weather-icon.png" alt="weather-icon"/>
+                <div class="windChill">
+                    <!-- <hr> -->
+                    <p>Wind Speed: 2.5 mph</p>
+                    <p>Wind Chill: <span id="wind-chill"></span></p>
+                </div>
             </div>    
             <div class="news">
                 <h3>News Release</h3>
