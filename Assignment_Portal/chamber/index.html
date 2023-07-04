@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="styles/normalize.css">
 </head>
 <body>
+    <div id="banner">
+        <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+    </div>
     <header>
         <nav>
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
@@ -40,17 +43,62 @@
         </nav>
     </header>
 
+    
+
     <main>
         <div class="gridContainer">
-            <div class="hero"><p>Hero with site name and call to action</p></div>
-            <div class="event"><p>Event</p></div>
-            <div class="weather"><p>Weather</p></div>
-            <div class="news"><p>News Release</p></div>
-            <div class="join"><p>Join</p></div>
+            <!-- <div class="hero"><p>Hero with site name and call to action</p></div> -->
+            <div class="hero">
+                <img src="images/hero.jpg" alt="city of Countryside">
+                <div class="hero-p">
+                    <h2>Welcome</h2>
+                    <button class="joinBtn" onclick="redirectToPage()">Join the Chamber</button>
+                </div>
+            </div>
+
+            <div class="event">
+                <h3>Ribbon Cutting</h3>
+                <h4>📚 Kiddie College</h4>
+                <p>Join us for the grand opening of The Kiddie College, Friday at 10:00 a.m.</p>
+                <p><a href="#">more info...</a></p>
+            </div>
+            <div class="weather">
+                <img src="images/weather.jpg" alt="weather">
+            </div>    
+            <div class="news">
+                <h3>News Release</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at pellentes que dolor. Sed nec eros eu lectus 
+                    tincidunt placerat. Sed hendrerit consequat justo, vel euismod mi faucibus vel.</p>
+            </div>
+            <div class="join">
+                <p>Discover how we can help your business.</p>
+                <button class="joinBtn" onclick="redirectToPage()">Join us</button>
+            </div>
             <!-- <div class="spotlights"> -->
-            <div class="spotlight1"><p>Spotlight 1</p></div>
-            <div class="spotlight2"><p>Spotlight 2</p></div>
-            <div class="spotlight3"><p>Spotlight 3</p></div>
+            <div class="spotlight1">
+                <h3>School Services</h3>
+                <img src="images/spotlight1.jpg" alt="Kiddie Academy">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <hr>
+                <p>contact@kiddie.com</p>
+                <p>708-333-3333 | Site</p>
+            </div>
+            <div class="spotlight2">
+                <h3>Transport Services</h3>
+                <img src="images/spotlight2.jpg" alt="transport services">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <hr>
+                <p>contact@bluesky.com</p>
+                <p>708-444-4444 | Site</p>
+            </div>
+            <div class="spotlight3">
+                <h3>New Bakery</h3>
+                <img src="images/spotlight3.jpg" alt="bakery">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <hr>
+                <p>contact@bakery.com</p>
+                <p>708-555-5555 | Site</p>
+            </div>
             <!-- </div> -->
         </div>
     </main>
