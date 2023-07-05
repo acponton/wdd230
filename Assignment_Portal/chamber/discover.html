@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countryside Chamber of Commerce | Discovery</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body>
+    <div id="banner">
+        <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+    </div>
+    <header>
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                <a id="logoHome" href="index.html">
+                    <img class="logoHome" src="images/logo.webp" alt="CCC logo">
+                </a>
+            <ul id="menuNav">
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>        
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="facebook icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+
+            <time></time>
+            <aside></aside>
+            <p></p>
+        </nav>
+    </header>
+
+    
+
+    <main>
+        <h1>Meet our city</h1>
+        <section class="demography">
+            <div>
+                <figure><img src="images/placeholder.jpg" data-src="images/map-countryside.jpg" alt="Map of Countryside" class="map"></figure>
+                <figcaption>Map of Countryside</figcaption>
+            </div>
+            <table class="demo-table">
+                <tr>
+                    <th>Mayor</th>
+                    <td>Sean McDermott</td>
+                    <!-- <td> 2021 </td> -->
+                </tr>
+                <tr>
+                    <th>County</th>
+                    <td>Cook</td>
+                </tr>
+                <tr>
+                  <th>Area</th>
+                  <td>2.88 mi²</td><td>2021</td>
+                </tr>
+                <tr>
+                  <th>Population Estimate</th>
+                  <td>6,275</td><td>2021</td>
+                </tr>
+                <tr>
+                  <th>Elevation</th>
+                  <td>663'</td><td>2021</td>
+                </tr>
+                <tr>
+                  <th>Median age</th>
+                  <td>45,2 years old</td><td>2021</td>
+                </tr>
+                <tr>
+                  <th>Median Income for a family</th>
+                  <td>$ 90,804</td><td>2021</td>
+                </tr>
+                <tr>
+                    <th>Median Home Value</th>
+                    <td>$ 226,700</td><td>2021</td>
+                  </tr>
+              </table>
+              
+        </section>
+        <section class="gallery">
+            <div class="photo-card">
+                <picture><img src="images/placeholder.jpg" data-src="images/mainstreet_countryside-800.jpg" alt="Main Street" loading="lazy"></picture>
+                <figcaption>Main Street of Countryside</figcaption>
+            </div>
+            <div class="photo-card">
+                <picture><img src="images/placeholder.jpg" data-src="images/historic_downtown-800.jpg" alt="Historic Downtown" loading="lazy"></picture>
+                </figcaption>Historic Downtown Countryside</figcaption>
+            </div>
+            <div class="photo-card">
+                <picture><img src="images/placeholder.jpg" data-src="images/carnival-800.jpg" alt="Carnival" loading="lazy"></picture>
+                </figcaption>Summer Carnival</figcaption>
+            </div>
+            <div class="photo-card">
+                <picture><img src="images/placeholder.jpg" data-src="images/Byway_Wayside_Exhibit-800.jpg" alt="Byway Wayside" loading="lazy"></picture>
+                </figcaption>Byway Wayside Exhibit</figcaption>
+            </div>
+            <div class="photo-card">
+                <picture><img src="images/placeholder.jpg" data-src="images/city_center-800.jpg" alt="City Center" loading="lazy"></picture>
+                </figcaption>Countryside City Center</figcaption>
+            </div>
+            <div class="photo-card">
+                <picture><img src="images/placeholder.jpg" data-src="images/flagg-creek-800.jpg" alt="Flagg Creek" loading="lazy"></picture>
+                </figcaption>Flagg Creek Golf Course</figcaption>
+            </div>
+            
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="information">
+            <a id="logo_footer" href="index.html"></a>
+            <img class="logo" src="images/logo.png" alt="logo CCC">
+            <h2>Countryside Chamber of Commerce</h2>
+        </div>
+        <div class="address">
+            <p>Joliet Road</p>
+            <p>Countryside, Illinois</p>
+        </div>
+        <div class="contact">
+            <p>info@countrysidechamber.org</p>
+            <p>(708) 9741450</p>
+            <p><a class="location" href="https://www.google.com/maps/place/City+of+Countryside+Municipal+Complex/@41.7744761,-87.8781425,15z/data=!4m6!3m5!1s0x880e4849144b2ab3:0xd696b2af6eb53aea!8m2!3d41.7744761!4d-87.8781425!16s%2Fg%2F11lgkgvvvs?entry=ttu">📍 Location Map</a></p>
+        </div>
+        <p id="copyright">&copy; <span id="year"></span> Countryside Chamber | Andrea C. Ponton | WDD 230 Project | Last Modification: <span id="updated-time"></span></p>
+    </footer>
+    <script src="scripts/time.js"></script>
+    <script src="scripts/button.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/lazy_load.js"></script>
+    </body>
+    </html>   
