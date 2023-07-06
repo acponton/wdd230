@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countryside Chamber of Commerce | Discovery</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body>
+    <div id="banner">
+        <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+    </div>
+    <header>
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                <a id="logoHome" href="index.html">
+                    <img class="logoHome" src="images/logo.webp" alt="CCC logo">
+                </a>
+            <ul id="menuNav">
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>        
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="facebook icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+
+            <time></time>
+            <aside></aside>
+            <p></p>
+        </nav>
+    </header>
+
+    <main>
+        <h3 class="memberHeader">Membership Form</h3>
+        
+        <form class="memberForm" method="get" action="thankyou.html">
+            <div id="memberForm">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class="top">First Name* <input type="text" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required></label>
+                    <label class="top">Business Position Title: <input type="text" name="position" pattern="[a-zA-Z\s\-]{7,}"></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="example@email.com" required></label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="(555) 555-5555" required></label>
+                    <label class="top">Business Name* <input type="text" name="business" required></label>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <div><label class="member"><input type="radio" name="membership" value="np">NP Membership (No fee)</label></div>
+                    <div><label class="member"><input type="radio" name="membership" value="bronze">Bronze Membership</label></div>
+                    <div><label class="member"><input type="radio" name="membership" value="silver">Silver Membership</label></div>
+                    <div><label class="member"><input type="radio" name="membership" value="gold">Gold Membership</label></div>
+                    
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Business Description</legend>
+                    <label class="top"><textarea name="businessDesc" placeholder="Please enter a brief description..."></textarea> </label>
+                    <label class="form-date"><p><span id="form-date"></span> </p></label>
+                </fieldset>
+                <input type="hidden" name="timeLoaded">
+                <input type="submit" value="Submit" class="submitButton">
+            </div>
+            <div>
+                <table class="membership">
+                    <thead>
+                        <tr>
+                            <th colspan="5" scope="colgroup">Membership Levels</th>
+                        </tr>
+                        <tr>
+                            <th scope="col"></th>
+                            <th class="vertical" scope="col">NP Membership (No fee)</th>
+                            <th class="vertical" scope="col">Bronze Membership</th>
+                            <th class="vertical" scope="col">Silver Membership</th>
+                            <th class="vertical" scope="col">Gold Membership</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Eligible to participate in annual strategic membership engagement consultation</td>
+                            <td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+                        </tr>
+                        <tr>
+                            <td>Invitations to member networking and business events</td>
+                            <td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+                        </tr>
+                        <tr>
+                            <td>Inclusion in Member Directory on Chamber website</td>
+                            <td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+                        </tr>
+                        <tr>
+                            <td>Eligible for all employees to receive all Chamber communications and participate in Chamber activities</td>
+                            <td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+                        </tr>
+                        <tr>
+                            <td>Vouchers for in-person member networking events</td>
+                            <td>4</td><td>6</td><td>10</td><td>15</td>
+                        </tr>
+                        <tr>
+                            <td>Eligible to feature company news, information, product or service on Chamber social media channels (LinkedIn, Twitter and/or Facebook)</td>
+                            <td>Up to 4</td><td>Up to 6</td><td>Up to 8</td><td>Up to 10</td>
+                        </tr>
+                        <tr>
+                            <td>Eligible to serve on our Business Committees and Councils</td>
+                            <td></td><td>✔</td><td>✔</td><td>✔</td>
+                        </tr>
+                        <tr>
+                            <td>Eligible for consideration to serve as an event panelist</td>
+                            <td></td><td></td><td>✔</td><td>✔</td>
+                        </tr>
+                        <tr>
+                            <td>Invitations to Chairman's Luncheon</td>
+                            <td></td><td></td><td></td><td>✔</td>
+                        </tr>
+                        <tr>
+                            <td>Eligible to be invited to participate in the Public Policy Committee</td>
+                            <td></td><td></td><td></td><td>✔</td>
+                        </tr>
+                        <tr>
+                            <td>Eligible for Nomination to Board of Directors</td>
+                            <td></td><td></td><td></td><td>✔</td>
+                        </tr>
+                        <tr>
+                            <td>One-on-One meeting with Chamber CEO</td>
+                            <td></td><td></td><td></td><td>✔</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </form>
+        
+    </main>
+
+    <footer>
+        <div class="information">
+            <a id="logo_footer" href="index.html"></a>
+            <img class="logo" src="images/logo.png" alt="logo CCC">
+            <h2>Countryside Chamber of Commerce</h2>
+        </div>
+        <div class="address">
+            <p>Joliet Road</p>
+            <p>Countryside, Illinois</p>
+        </div>
+        <div class="contact">
+            <p>info@countrysidechamber.org</p>
+            <p>(708) 9741450</p>
+            <p><a class="location" href="https://www.google.com/maps/place/City+of+Countryside+Municipal+Complex/@41.7744761,-87.8781425,15z/data=!4m6!3m5!1s0x880e4849144b2ab3:0xd696b2af6eb53aea!8m2!3d41.7744761!4d-87.8781425!16s%2Fg%2F11lgkgvvvs?entry=ttu">📍 Location Map</a></p>
+        </div>
+        <p id="copyright">&copy; <span id="year"></span> Countryside Chamber | Andrea C. Ponton | WDD 230 Project | Last Modification: <span id="updated-time"></span></p>
+    </footer>
+    <script src="scripts/time.js"></script>
+    <script src="scripts/button.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/lazy_load.js"></script>
+    <script src="scripts/visits.js"></script>
+    <script src="scripts/form.js"></script>
+    </body>
+    </html>   
