@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white
+  }
+  
+  header {
+    background-color: #04225f;
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 30px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 15px;
+  }
+  
+  section {
+    background-color: rgba(141, 112, 207, 0.388);
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #0e0466;
+    font-size: 20px;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    box-shadow: 2px 4px 5px rgba(74, 72, 75, 0.1);
+    transition: transform 0.3s;
+    
+
+  }
+  
+  img:hover {
+    transform: scale(1.05);
+  }
+  
+  p {
+    text-align: center;
+    color: #040752;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  
+  footer {
+    background-color: #0d2e67;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+  }
