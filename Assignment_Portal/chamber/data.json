@@ -1,0 +1,77 @@
+{
+    "companies": [
+      {
+        "name": "TRU VUE",
+        "address": "9400 W 55th St, Countryside, IL 60525",
+        "phone": "(708) 485-5080",
+        "website": "https://tru-vue.com/",
+        "imageurl": "https://tru-vue.com/wp-content/themes/truvue/build/images/svgs/tru-vue-logo.svg",
+        "level": "Bronze"
+      },
+      {
+        "name": "Countryside Bank",
+        "address": "6734 Joliet Rd, Countryside, IL 60525",
+        "phone": "(708) 485-3100",
+        "website": "https://www.bankcountryside.com/",
+        "imageurl": "/content/dam/wintrust/logos/communitybanks/bankcountryside-v1.png",
+        "level": "Silver"
+      },
+      {
+        "name": "Helping Hand Center",
+        "address": "9649 W 55th St, Countryside, IL 60525",
+        "phone": "(708) 352-3580",
+        "website": "https://helpinghand-il.org/",
+        "imageurl": "https://helpinghand-il.org/wp-content/uploads/2020/12/HH-logo-color.png",
+        "level": "NP"
+      },
+      {
+        "name": "Westfield Ford",
+        "address": " 6200 South La Grange Road, Countryside, IL 60525",
+        "phone": "(877) 470-0298",
+        "website": "https://www.westfieldford.com/",
+        "imageurl": "https://pictures.dealer.com/w/westfieldfordfd/1643/58c785db2c4d0d6804de65516c38df62x.jpg?impolicy=downsize&h=160",
+        "level": "Golden"
+      },
+      {
+        "name": "Illinois Harley-Davidson",
+        "address": " 9950 Joliet Rd, Countryside, IL 60525",
+        "phone": "(708) 387-8750",
+        "website": "https://www.illinoishd.com/",
+        "imageurl": "https://www.illinoishd.com/images/illinoishd-logo.png",
+        "level": "Golden"
+      },
+      {
+        "name": "Best Western Plus Chicagoland - Countryside",
+        "address": "6251 Joliet Rd, Countryside, IL 60525",
+        "phone": "(708) 354-5200",
+        "website": "https://www.bestwestern.com/en_US.html",
+        "imageurl": "https://www.bestwestern.com/content/dam/best-western/brand/brand-logos/best-western-hotels-resorts-master-23f1.png",
+        "level": "Golden"
+      },
+      {
+        "name": "Holiday Inn",
+        "address": "6201 Joliet Rd, Countryside, IL 60525",
+        "phone": "(708) 354-4200",
+        "website": "https://www.holidayinn.com/hotels/us/en/reservation",
+        "imageurl": "https://digital.ihg.com/is/image/ihg/holiday-inn_lsc_lkp_d_r_rgb_pos-web?fmt=png-alpha",
+        "level": "Golden"
+      },
+      {
+        "name": "Texas Roadhouse",
+        "address": "9960 Joliet Rd, Countryside, IL 60525",
+        "phone": "(708) 482-7870",
+        "website": "https://www.texasroadhouse.com/",
+        "imageurl": "https://www.texasroadhouse.com/sites/default/files/TXRH-grey.png",
+        "level": "Silver"
+      },
+      {
+        "name": "Gerald Honda Of Countryside",
+        "address": "5901 South La Grange Road, Countryside, IL 60525",
+        "phone": "(708) 328-6699",
+        "website": "https://www.geraldhondacountryside.com/",
+        "imageurl": "https://dealerimages.dealereprocess.com/image/upload/v1644606809/HondaofCountrySide_Logo_jtnvzq.png",
+        "level": "Golden"
+      }
+    ]
+  }
+
