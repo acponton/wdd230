@@ -604,42 +604,46 @@ div.visits-div {
 /* *****************************************
                 Directory
 ***************************************** */
-.list {
+.grid-directory.list {
 	display: flex;
 	flex-direction: column;
-    box-shadow: none;
-    transition: none;
-    margin: 0;
+  width: 90%;
 }
 
-.list h2{
+.grid-directory.list h2{
     font-size: 18px;
     color: black;
 }
 
-.list section {
-    display: flex;
-    flex-direction: column;
+.grid-directory.list section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* flex-direction: column; */
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0.25rem;
     font-size: 16px;
     height: fit-content;
     border: none;
     align-items: center;
     text-align: center;
-    width: 95%;
 }
 
-.list section img {
+.grid-directory.list section img {
 	display: none;
 }
 
-.list section:nth-child(odd) {
+.grid-directory.list section:nth-child(odd) {
 	background-color: lightgray;
 }
 
-a {
+.grid-directory.list a {
   text-decoration: none;
   font-family: var(--paragraph-font);
-  color: var(--accent1-color);
+  color: #445ba9;;
+}
+.grid-directory.list section:hover {
+    transform: none;
 }
 
 .grid-directory a {
@@ -666,8 +670,8 @@ button#grid , button#list{
     align-items: center;
     justify-content: center;
     margin-right: 1em;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-color: var(--primary-color);
 }
 
@@ -682,19 +686,18 @@ button#grid:active, button#list:active {
 button#grid img, button#list img {
     align-items: center;
     width: 100%;
-    padding: 2px;
 }
 
-div.grid {
+.grid-directory {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-div.grid-directory section {
+.grid-directory section {
     display: flex;
     flex-direction: column;
     margin: 1rem;
-    background-color: #80CED7;
+    background-color: #9AD1D4;
     box-shadow: 5px 5px 10px #6f7364;
     transition: transform 0.2s;
     align-items: center;
@@ -703,27 +706,29 @@ div.grid-directory section {
     border: none;
 }
 
-div.grid-directory section:hover {
+.grid-directory section:hover {
     transform: scale(1.05);
 }
 
-div.grid-directory img {
+.grid-directory img {
     margin-bottom: 1rem;
     width: 30%;
     object-fit: cover;
 }
 
-div.grid-directory h2 {
+.grid-directory h2 {
     margin: 0.2cm;
     font-size: 18px;
 }
 
-div.grid-directory p {
+.grid-directory p {
     font-size: 16px;
 }
 
 .directory {
   margin-bottom: 2em;
+  width: 90%;
+  margin-left: 0.5in;
 }
 
     
