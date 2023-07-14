@@ -320,32 +320,67 @@ footer a {
 }
 
 
-.weather {
-    grid-row: 3;
+
+    /* *****************************************
+                WEATHER
+***************************************** */
+
+section.weather {
     background-color: #80CED7;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
     border: 1px solid black;
-    /* text-align: right; */
-}
-.weather h3{
+  }
+  
+  .weather-div {
+    color: yellow;
     font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* max-width: 40vh; */
+  }
+  
+  .weather-div #current-temp {
+    font-size: 2em;
+  }
+  
+  .weather-icon img{
+    width: 80%;
+    float: left;
+    /* margin-left: 20px; */
+  }
+  .temperature{
+    color: white;
+    text-align: right;
+  }
+  .temperature h3{
     color: yellow;
     text-align: center;
-}
-.weather img{
-    width: 40%;
+    margin-top: 0.1cm;
+  }
+  .temperature p {
+    font-size: .8em
+  }
+  .wind{
+    font-size: 24px;
+    color: white;
+    text-align: right;
+  }
+  
+  .wind hr {
+    margin-top: 15px;
+  }
+  
+  .weather-icon figcaption {
+    /* font-family: var(--paragraph-font); */
+    /* text-transform: capitalize; */
     padding: 0;
     float: left;
-    margin-left: 0.5cm;
-} 
-.windChill{
-    text-align: left;
-    color: white;
-    font-size: 23px;
-    margin-top: 2.2in;
-    font-weight: bold;
-    margin-left: 2in;
-}
-
+  }
 
 .news {
     grid-row: 4;

@@ -70,9 +70,9 @@
         grid-template-columns: 23% 48% 23%;
         grid-template-rows: 33% 33% 33%;
         min-height: 500px;
-        column-gap: 20px;
-        row-gap: 23px;    
-        margin-bottom: 0.8in;
+        column-gap: 15px;
+        row-gap: 15px;    
+        margin-bottom: 0.3in;
         text-align: left;
     }
     
@@ -104,48 +104,80 @@
     }
 
 
-    
-    /* .weather {
-        grid-column: 1/2;
-        grid-row: 2;
-        background-color: #80CED7;
-        border: 1px solid black;
-    }
+    /* *****************************************
+                WEATHER
+***************************************** */
 
-    .weather img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        padding: 0;
-    } */
+section.weather {
+  background-color: #80CED7;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  align-items: center;
+  border: 1px solid black;
+}
 
-    .weather {
-        grid-column: 1/2;
-        grid-row: 2;
-        background-color: #80CED7;
-        border: 1px solid black;
-        /* text-align: right; */
-    }
-    .weather h3{
-        font-size: 30px;
-        color: yellow;
-        text-align: center;
-    }
-    .weather img{
-        width: 25%;
-        padding: 0;
-        float: left;
-        margin-left: 0.5cm;
-    } 
-    .windChill{
-        text-align: left;
-        color: white;
-        font-size: 16px;
-        margin-top: 1in;
-        font-weight: bold;
-        /* margin-left: 2in; */
-        padding: 0;
-    }
+.weather-div {
+  color: yellow;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 0.2cm;
+  margin-bottom: 0.1in;
+  /* max-width: 40vh; */
+}
+
+.weather-div #current-temp {
+  font-size: 2em;
+}
+
+.weather-icon img{
+  position: absolute;
+  width: 8%;
+  /* float: left; */
+  /* margin-left: 20px; */
+  top: 6.5in;
+  left: 0.5in;
+}
+.temperature{
+  color: white;
+  text-align: right;
+}
+.temperature h3{
+  color: yellow;
+  margin-left: 0.2in;
+  margin-top: 0;
+  text-align: center;
+  /* margin-top: 1px; */
+}
+.temperature p {
+  font-size: .8em
+}
+.wind{
+  font-size: 16px;
+  color: white;
+  text-align: right;
+  /* margin-bottom: 0.1in; */
+  margin: 0;
+  margin-left: 1.2in;
+}
+
+.wind hr {
+  margin-top: 0.7in;
+  margin-bottom: 15px;
+}
+
+.weather-icon figcaption {
+  /* font-family: var(--paragraph-font); */
+  /* text-transform: capitalize; */
+  padding: 0;
+  float: left;
+  position: absolute;
+  left: 0.8in;
+  top: 7.6in;
+}
 
     
     .join {

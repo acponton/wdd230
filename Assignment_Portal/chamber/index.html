@@ -68,24 +68,36 @@
                 <p>Join us for the grand opening of The Kiddie College, Friday at 10:00 a.m.</p>
                 <p><a href="#">more info...</a></p>
             </div>
-            <div class="weather">
-                <h3>Weather</h3>
-                <img class="weather-img" src="images/weather-icon.png" alt="weather-icon"/>
-                <div class="windChill">
-                    <!-- <hr> -->
-                    <p>Wind Speed: 2.5 mph</p>
-                    <p>Wind Chill: <span id="wind-chill"></span></p>
-                </div>
-            </div>    
+
+            <section class="weather">
+                <div class="weather-div">
+                    <div class="temperature">
+                        <h3><span id="region"></span> Weather</h3>
+                        <p><span id="current-temp"></span>°F</p>
+                    </div>
+                    <div class="weather-icon">
+                        <img src="" alt="" id="weather-icon" />
+                        <figcaption></figcaption>
+                    </div>
+                    <div class="wind">
+                        <hr>
+                        <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+                        <p>Wind Chill: <span id="wind-chill"></span></p>
+                    </div>
+                </div> 
+            </section>   
+
             <div class="news">
                 <h3>News Release</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at pellentes que dolor. Sed nec eros eu lectus 
                     tincidunt placerat. Sed hendrerit consequat justo, vel euismod mi faucibus vel.</p>
             </div>
+
             <div class="join">
                 <p>Discover how we can help your business.</p>
                 <button class="joinBtn" onclick="redirectToPage()">Join us</button>
             </div>
+
             <!-- <div class="spotlights"> -->
             <div class="spotlight1">
                 <h3>School Services</h3>
@@ -95,6 +107,7 @@
                 <p>contact@kiddie.com</p>
                 <p>708-333-3333 | Site</p>
             </div>
+
             <div class="spotlight2">
                 <h3>Transport Services</h3>
                 <img src="images/spotlight2.jpg" alt="transport services">
@@ -103,6 +116,7 @@
                 <p>contact@bluesky.com</p>
                 <p>708-444-4444 | Site</p>
             </div>
+
             <div class="spotlight3">
                 <h3>New Bakery</h3>
                 <img src="images/spotlight3.jpg" alt="bakery">
