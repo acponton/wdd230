@@ -25,7 +25,7 @@
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li class="current"><a href="contact.html">Contact</a></li>
             </ul>        
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook.png" alt="facebook icon">
@@ -43,10 +43,47 @@
         </nav>
     </header>
 
-    <main>
-        <h3 class="header-thanks">Membership Application</h3>
-        <p class="thanks1">We really appreciate that you have taken the time to apply to become a member of our Organization.</p>
-        <p class="thanks2">You will receive an email with important information about your membership in a few days!</p>
+    <main class="contact-form">
+        <div class="hero-contact">
+            <img src="images/contact-hero.png" alt="Contact us" loading="lazy">
+        </div>
+        <h2 class="contact-form-title">Contact us!</h2>
+        <form class="contact-form">
+            <fieldset>
+                <legend>Send a message</legend>
+                <div class="label">
+                    <label class="top">First Name* <input type="text" name="fname" placeholder="Your name" required></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="example@email.com" required></label>
+                    <label class="top">Write your message:<textarea name="message" placeholder="Please, type you message..."></textarea> </label>
+                    <input type="submit" value="Submit" class="submitBtn">
+                </div>
+                
+            </fieldset>
+
+        </form>
+
+        <section class="contact-section">
+            <h2>Visit us!</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <address>803 Joliet Road</address>
+                    <address>Countryside, Illinois</address>
+                    <a href="mailto:info@countrysidechamber.org" target="_blank">info@countrysidechamber.org</a>
+                    <p>(708) 9741450</p>
+                    <div class="social-media">
+                        <a href="htts://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="instagram-logo"></a>
+                        <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" alt="twitter-logo"></a>
+                        <a href="https://www.fb.com" target="_blank"><img src="images/facebook.png" alt="facebook-logo"></a>
+                    </div>
+                </div>
+        
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23803.392957311604!2d-87.87772825!3d41.7760725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e37a2ebe4ef53%3A0x528d1dfee99ec431!2sCountryside%2C%20IL%2060525!5e0!3m2!1sen!2sus!4v1689472248416!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            
+        </section>
+
     </main>
 
     <footer>
@@ -72,5 +109,6 @@
     <script src="scripts/lazy_load.js"></script>
     <script src="scripts/visits.js"></script>
     <script src="scripts/form.js"></script>
+    <script src="scripts/companies.js"></script>
     </body>
     </html>   
