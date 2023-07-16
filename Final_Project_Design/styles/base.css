@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css?family=Sofia");
+
+main {
+    text-align: center;
+}
+
+header img {
+max-width : 300px;
+padding-right: 0.5in;
+padding-left: 1in;
+}
+header {
+display : flex;
+background-color : #f5bb00;
+color : navy;
+font-family : "sofia", sans-serif;
+padding-top : 1rem;
+padding-bottom : 1rem;
+}
+header h1{
+    font-size: 1.5cm;
+    font-weight: bold;
+    text-align: right;
+}
+header h2{
+    font-size: 0.8cm;
+    text-align: right;
+}
+nav {
+display : flex;
+background-color : #007ea7;
+text-align : center;
+box-shadow : 0 0 20px #1D1D1D;
+max-width : 95%;
+margin : 0 auto;
+margin-top : 0.5rem;
+}
+
+nav div {
+flex : 1 1 auto;
+}
+nav a {
+display : block;
+color : white;
+text-align : center;
+padding : 15px;
+font-size : 20px;
+}
+nav a:hover {
+background-color : #80ced7;
+color : white;
+}
+.content h3 {
+text-align : center;
+font-family : 'Times New Roman', Times, serif;
+color : navy;
+padding : 20px;
+padding-bottom : 0;
+margin-bottom : 10px;
+font-size : 44px;
+text-decoration: underline;
+}
+p .content {
+font-family : 'Times New Roman', Times, serif;
+font-size : 25px;
+width: 90%;
+margin: 0 auto;
+line-height : 1.5;
+padding : 1in;
+text-align : center;
+color: navy;
+}
+footer {
+background-color : #007ea7;
+padding : 1rem;
+color : white;
+text-align : center;
+margin-top : 150px;
+}
+footer p{
+    font-size: 15px;
+    color: white;
+}
+/* ------------------------------------------------------------------------------------------------ */
+
+h3, h4, h5, h6, h7, h8 {
+font-family: 'Times New Roman', Times, serif;
+color: #007ea7;
+font-size: 25px;
+text-align: center;
+}
+
+hr {
+height: 3px;
+margin: 35px 0;
+background: #80CED7;
+}
+header {
+padding: 1em;
+text-align: center;
+color: white;
+background-color: #007ea7;
+}
+header > h1, header > h2 {
+color: white;
+}
+p {
+font-family: 'Times New Roman', Times, serif;
+color: navy;
+padding: 1em;
+width: 90%;
+font-size: 25px;
+text-align: center;
+margin: 0 auto;
+}
+.colors {
+width: 100%;
+min-width: 350px;
+margin: 30px auto;
+text-align: center;
+align-items: center;
+}
+.colors th {
+background-color: #999;
+}
+.colors td{
+width: 25%;
+height: 3em;
+}
+
+.primary {
+background-color: #ccdbdc;
+}
+.secondary {
+background-color: #9AD1D4;
+}
+.accent1 {
+background-color: #80CED7;
+}
+.accent2{
+background-color: #007EA7;
+}
+.accent3{
+background-color: #003249;
+}
+
+p.colored {
+background-color: #007ea7;
+color: white;
+width: 90%;
+font-size: 25px;
+text-align: center;
+margin: 0 auto;
+}
+.page-title h3{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-decoration: underline;
+}
+.scenarios {
+text-align : center;
+font-family : 'Times New Roman', Times, serif;
+font-size: 25px;
+line-height: 1cm;
+}
+.scenarios h4 {
+font-size : 40px;
+text-decoration: underline;
+}
+.audtable h4{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-decoration: underline;
+}
+.audtable h5{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: black;
+}
+.audtable img{
+    padding-top: 1cm;
+}
+
+.tablehead{
+    color : #1D1D1D;
+    font-family : 'Times New Roman', Times, serif;
+    border: #1D1D1D solid 2px;
+    background-color: white;
+}
+
+td, th {
+    border: 2px solid #1D1D1D;
+    padding: 10px;
+    max-width: 70em;
+    text-align: center;
+}
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+    background-color: #ccdbdc;
+}
+
+
+/* @media (min-width: 37.5em) {
+nav {
+flex-direction : row;
+}
+}
+nav a {
+font-size : 1.1rem;
+}
+@media (min-width: 48em) {
+nav a {
+font-size : 1.3rem;
+}
+} */
