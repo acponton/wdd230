@@ -5,9 +5,9 @@ main {
 }
 
 header img {
-max-width : 300px;
-padding-right: 0.5in;
-padding-left: 1in;
+width : 200px;
+height: 200px;
+margin: 0.2in;
 }
 header {
 display : flex;
@@ -16,11 +16,15 @@ color : navy;
 font-family : "sofia", sans-serif;
 padding-top : 1rem;
 padding-bottom : 1rem;
+text-align: center;
 }
+
+
 header h1{
     font-size: 1.5cm;
     font-weight: bold;
-    text-align: right;
+    /* text-align: right; */
+    margin-left: 2in;
 }
 header h2{
     font-size: 0.8cm;
@@ -28,7 +32,7 @@ header h2{
 }
 nav {
 display : flex;
-background-color : #007ea7;
+background-color : #f5bb00;
 text-align : center;
 box-shadow : 0 0 20px #1D1D1D;
 max-width : 95%;
@@ -41,14 +45,14 @@ flex : 1 1 auto;
 }
 nav a {
 display : block;
-color : white;
+color : navy;
 text-align : center;
 padding : 15px;
 font-size : 20px;
 }
 nav a:hover {
-background-color : #80ced7;
-color : white;
+background-color : #8ea604;
+color: white;
 }
 .content h3 {
 text-align : center;
@@ -71,21 +75,22 @@ text-align : center;
 color: navy;
 }
 footer {
-background-color : #007ea7;
+background-color : #f5bb00;
 padding : 1rem;
-color : white;
+color : navy;
 text-align : center;
-margin-top : 150px;
+margin-top : 0.2in;
 }
 footer p{
-    font-size: 15px;
-    color: white;
+    font-size: 20px;
+    color: navy;
+    padding: 0.2cm;
 }
 /* ------------------------------------------------------------------------------------------------ */
 
 h3, h4, h5, h6, h7, h8 {
 font-family: 'Times New Roman', Times, serif;
-color: #007ea7;
+color: navy;
 font-size: 25px;
 text-align: center;
 }
@@ -93,17 +98,10 @@ text-align: center;
 hr {
 height: 3px;
 margin: 35px 0;
-background: #80CED7;
+background: #8ea604;
 }
-header {
-padding: 1em;
-text-align: center;
-color: white;
-background-color: #007ea7;
-}
-header > h1, header > h2 {
-color: white;
-}
+
+
 p {
 font-family: 'Times New Roman', Times, serif;
 color: navy;
@@ -129,24 +127,24 @@ height: 3em;
 }
 
 .primary {
-background-color: #ccdbdc;
+background-color: #f5bb00;
 }
 .secondary {
-background-color: #9AD1D4;
+background-color: #8ea604;
 }
 .accent1 {
-background-color: #80CED7;
+background-color: #ff4e00;
 }
 .accent2{
-background-color: #007EA7;
+background-color: #ec9f05;
 }
 .accent3{
-background-color: #003249;
+background-color: #bf3100;
 }
 
 p.colored {
-background-color: #007ea7;
-color: white;
+background-color: #ff4e00;
+color: navy;
 width: 90%;
 font-size: 25px;
 text-align: center;
@@ -178,7 +176,7 @@ text-decoration: underline;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
-    color: black;
+    color: navy;
 }
 .audtable img{
     padding-top: 1cm;
@@ -202,7 +200,7 @@ th {
     vertical-align: inherit;
     font-weight: bold;
     text-align: center;
-    background-color: #ccdbdc;
+    background-color: #f5bb00;
 }
 
 

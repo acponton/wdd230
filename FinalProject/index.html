@@ -11,9 +11,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
 </head>
 <body>
-    <!-- <div id="banner">
-        <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
-    </div> -->
+
     <header>
         <nav>
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
@@ -35,10 +33,6 @@
             <a href="https://instagram.com" target="_blank">
                 <img src="images/instagram.png" alt="instagram icon">
             </a>
-
-            <!-- <time></time>
-            <aside></aside>
-            <p></p> -->
         </nav>
     </header>
 
@@ -46,25 +40,22 @@
 
     <main>
         <div class="gridContainer">
-            <!-- <div class="hero">
+            <div class="hero">
                 <picture>
-                    <source media="(max-width: 400px)" srcset="images/mainstreet_countryside-400.jpg">
+                    <!-- <source media="(max-width: 400px)" srcset="images/mainstreet_countryside-400.jpg">
                     <source media="(max-width: 800px)" srcset="images/mainstreet_countryside-800.jpg">
-                    <source media="(max-width: 1200px)" srcset="images/mainstreet_countryside-1200.jpg">
-                    <img src="images/mainstreet_countryside.jpg" alt="Countryside">
+                    <source media="(max-width: 1200px)" srcset="images/mainstreet_countryside-1200.jpg"> -->
+                    <img src="images/hero.jpg" alt="hero" loading="lazy">
                 </picture>
                 <div class="hero-p">
-                    <h2>Welcome</h2>
-                    <button class="joinBtn" onclick="redirectToPage()">Join the Chamber</button>
+                    <button class="joinBtn" onclick="redirectToPage()">Make your own drink!</button>
                 </div>
-            </div> -->
+            </div>
 
-            <!-- <div class="event">
-                <h3>Ribbon Cutting</h3>
-                <h4>📚 Kiddie College</h4>
-                <p>Join us for the grand opening of The Kiddie College, Friday at 10:00 a.m.</p>
-                <p><a href="#">more info...</a></p>
-            </div> -->
+            <div class="food-truck">
+                <img src="images/food_truck.webp" alt="Food Truck" loading="lazy">
+                <p>Find our Food Truck around!</p>
+            </div>
 
             <section class="weather">
                 <div class="weather-div">
@@ -82,46 +73,19 @@
                         <p>Wind Chill: <span id="wind-chill"></span></p>
                     </div>
                 </div> 
-            </section>   
+            </section>  
 
-            <!-- <div class="news">
-                <h3>News Release</h3>
-                <p>February 1, 2023 was the “go-live” date for our transition to electronic ticketing and local ordinance
-                    adjudication. All local ordinance tickets issued by the Countryside Police Department and Building
-                    Department are now completed electronically through Quicket Solutions cloud-based software.</p>
-            </div> -->
+            <div class="spotlight1">
+                <img src="images/beach.jpg" alt="beach" loading="lazy">
+                <p>Best beaches in Southern California</p>
+                <p><a href="#">Read more...</a></p>
+            </div>
 
-            <!-- <div class="join">
-                <p>Discover how we can help your business.</p>
-                <button class="joinBtn" onclick="redirectToPage()">Join us</button>
-            </div> -->
+            <div class="options">
+                <img src="images/refreshers.jpg" alt="refresher" loading="lazy">
+                <p>Pick your favorite style!</p>
+            </div>
 
-            <!-- <div class="spotlight1">
-                <h3>Countryside Bank</h3>
-                <img src="https://www.bankcountryside.com/content/dam/wintrust/logos/communitybanks/bankcountryside-v1.png" alt="Countryside Bank">
-                <p>6734 Joliet Rd, Countryside, IL 60525</p>
-                <hr>
-                <p> <a href="www.bankcountryside.com">www.bankcountryside.com</a></p>
-                <p>(708) 485-3100 | Site</p>
-            </div> -->
-
-            <!-- <div class="spotlight2">
-                <h3>Texas Roadhouse</h3>
-                <img src="https://www.texasroadhouse.com/sites/default/files/TXRH-grey.png" alt="Texas Roadhouse">
-                <p>9960 Joliet Rd, Countryside, IL 60525</p>
-                <hr>
-                <p> <a href="www.texasroadhouse.com">www.texasroadhouse.com</a></p>
-                <p>(708) 482-7870 | Site</p>
-            </div> -->
-
-            <!-- <div class="spotlight3">
-                <h3>Illinois Harley-Davidson</h3>
-                <img src="https://www.illinoishd.com/images/illinoishd-logo.png" alt="Harley-Davidson">
-                <p>9950 Joliet Rd, Countryside, IL 60525</p>
-                <hr>
-                <p> <a href="www.illinoishd.com">www.illinoishd.com</a></p>
-                <p>(708) 387-8750 | Site</p>
-            </div> -->
         </div>
     </main>
 
@@ -132,7 +96,6 @@
             <h2>Bountiful Foods</h2>
         </div>
         <div class="address">
-            <!-- <p>803 Joliet Road</p> -->
             <p>Carlsbad, California</p>
         </div>
         <div class="contact">
@@ -146,7 +109,6 @@
     <script src="scripts/button.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/lazy_load.js"></script>
-    <script src="scripts/visits.js"></script>
     <script src="scripts/form.js"></script>
     </body>
     </html>   

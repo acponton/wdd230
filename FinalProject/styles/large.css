@@ -4,15 +4,12 @@
     body{
         max-width: 1600px;
     }
-    #banner p {
-        font-size: 25px;
     
-    }
 
     #menuNav {
         display: flex;
         padding: 0.8cm;
-        margin: 0.3cm;
+        /* margin: 0.3cm; */
         text-decoration: none;
         color: white;
         justify-content: center;
@@ -31,7 +28,6 @@
     }
 
     nav {
-        background-color: #007EA7;
         padding-bottom: .1rem;
     }
     
@@ -45,17 +41,9 @@
     #hamburgerBtn.open span:nth-child(1) {display:none;}
     #hamburgerBtn.open span:nth-child(2) {display:none;}
 
-    time,
-    aside {
-        font-size: 25px;
-        margin-bottom: 0.2in;
-        color: white;
-        text-align: center;
-        float: none;
-        text-shadow: 1.5px 1.5px black;
-    }
-    #logoHome {
-        max-width: 10%;
+    
+    #logoHome img{
+        max-width: 20%;
         margin-bottom: 1rem;
     }
     img {
@@ -68,40 +56,46 @@
         display: grid;
         justify-content: center;
         grid-template-columns: 23% 48% 23%;
-        grid-template-rows: 33% 33% 33%;
+        grid-template-rows: 50% 50%;
         min-height: 500px;
         column-gap: 15px;
         row-gap: 15px;    
         margin-bottom: 0.3in;
         text-align: left;
     }
-    
-    .event {
-        grid-column: 1/2;
-        grid-row: 1;
-        background-color: #80CED7;
-        border: 1px solid black;
-        text-align: center;
-        font-weight: bold;
-        color: white;
-        font-size: 18px;
-    }
-
-    .event h3{
-        color: yellow;
-        font-size: 20px;
-        margin-bottom: 0.2cm;
-    }
-    .event h4{
-        color: white;
-        font-size: 18px;
-        margin-bottom: 0.5cm;
-    }
-    
-    .event a{
-        color: yellow;
-        font-size: 16px;
-    }
+   
+    .food-truck {
+      grid-row: 2;
+      background-color: #8ea604;
+      border: 1px solid black;
+      text-align: center;
+      font-weight: bold;
+      color: white;
+      font-size: 25px;
+  }
+  .food-truck img{
+    width: 75%;
+    /* margin-top: 0.3in; */
+    align-items: center;
+    transition: transform .2s;
+    padding: 0;
+    padding-right: 0.2in;
+    margin: 0.2in;
+  }
+  
+  .food-truck img:hover{
+    transform: scale(1.1);
+  }
+  
+  .food-truck p:hover {
+    color: white;
+    text-shadow: 2px 2px 3px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
+  
+  .food-truck p{
+    font-size: 25px;
+    margin: 0.2in;
+  }
 
 
     /* *****************************************
@@ -109,7 +103,7 @@
 ***************************************** */
 
 section.weather {
-  background-color: #80CED7;
+  background-color: #8ea604;
   display: flex;
   justify-content: center;
   font-weight: bold;
@@ -118,15 +112,12 @@ section.weather {
 }
 
 .weather-div {
-  color: yellow;
-  font-size: 20px;
+  color: white;
+  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 0.2cm;
-  margin-bottom: 0.1in;
-  /* max-width: 40vh; */
 }
 
 .weather-div #current-temp {
@@ -134,93 +125,56 @@ section.weather {
 }
 
 .weather-icon img{
-  position: absolute;
-  width: 8%;
-  /* float: left; */
-  /* margin-left: 20px; */
-  top: 6.5in;
-  left: 0.5in;
+  width: 70%;
+  float: left;
 }
 .temperature{
   color: white;
   text-align: right;
 }
 .temperature h3{
-  color: yellow;
-  margin-left: 0.2in;
-  margin-top: 0;
+  color: #bf3100;
   text-align: center;
-  /* margin-top: 1px; */
+  margin-top: 0.3in;
+  font-size: 25px;
 }
 .temperature p {
   font-size: .8em
 }
 .wind{
-  font-size: 16px;
+  font-size: 18px;
   color: white;
   text-align: right;
-  /* margin-bottom: 0.1in; */
-  margin: 0;
-  margin-left: 1.2in;
 }
 
 .wind hr {
-  margin-top: 0.7in;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .weather-icon figcaption {
-  /* font-family: var(--paragraph-font); */
-  /* text-transform: capitalize; */
   padding: 0;
   float: left;
-  position: absolute;
-  left: 0.8in;
-  top: 7.6in;
 }
 
-    
-    .join {
-        grid-column: 1/2;
-        grid-row: 3;
-        background-color: #80CED7;
-        border: 1px solid black;
-        text-align: center;
-        color: white;
-        font-size: 25px;
-        padding-top: 1.5cm;
-        /* margin-bottom: 0.5cm; */
-    }
-
-    .join button{
-        align-items: center;
-        background-color: red;
-        color: white;
-        border-radius: 12px;
-        border-style: none;
-        padding: 0.2cm;
-        font-size: 20px;
-        margin-top: 0.5cm;
-    }
     
     .hero {
         grid-column: 2/3;
         grid-row: 1/3; 
         column-gap: .5%;
-        background-color: #80CED7;
+        background-color: #8ea604;
         border: 1px solid black; 
     }
 
     .hero img{
-        grid-column: 1;
-        grid-row: 1;
+        /* grid-column: 1;
+        grid-row: 1; */
         width: 100%;
-        height: 100%;
+        /* height: 100%; */
         object-fit: cover;
         padding: 0;
     }
     .hero h2{
-        color: yellow;
+        color: #bf3100;
         font-size: 50px;
         position: absolute;
         margin: 0;
@@ -230,28 +184,12 @@ section.weather {
 
     .hero button{
         position: absolute;
-        top: 8in;
+        top: 8.5in;
         right: 4.5in;
-        background: green;
+        background: #ff4e00;
         border-radius: 12px;
         padding: 0.3cm;
         color: white;
-    }
-
-    
-    .news {
-        grid-column: 2/3;
-        grid-row: 3;
-        background-color: #80CED7;
-        border: 1px solid black;
-        text-align: center;
-        color: white;
-        font-size: 20px;
-    }
-
-    .news h3{
-        font-size: 30px;
-        color: yellow;
     }
 
     
@@ -259,82 +197,64 @@ section.weather {
         grid-row: 1/2;
         grid-column: 3/4;
         border: 1px solid black;
-        background-color: #80CED7;
+        background-color: #8ea604;
         text-align: center;
         color: white;
-        font-size: 16px;
-        /* padding: 0; */
-    }
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0.2cm;
+        transition: transform .2s;
+    } 
     
     .spotlight1 h3{
-        color: yellow;
+      color: #bf3100;
         font-size: 18px;
     }
     .spotlight1 img{
-        width: 35%;
-        /* align-items: center; */
-        float: revert;
+        width: 75%;
+        /* float: revert; */
         padding: 0;
-        margin-bottom: 0.3cm;
+        /* margin-bottom: 0.3cm; */
+        margin: 0.2in;
+  
+    }
+    .spotlight1 a{
+      font-size: 18px;
     }
 
     .spotlight1 hr{
         margin: 10px;
     }
 
-
-    .spotlight2 { 
-        grid-row: 2/3;
-        grid-column: 3/4;
-        border: 1px solid black;
-        background-color: #80CED7; 
-        text-align: center;
-        color: white;
-        font-size: 16px;
-        /* padding: 0; */
+    .spotlight1 img:hover{
+      transform: scale(1.1);
     }
 
-    .spotlight2 h3{
-        color: yellow;
-        font-size: 18px;
-    }
-    .spotlight2 img{
-        width: 35%;
-        float: revert;
-        padding: 0;
-        margin-bottom: 0.2cm;
-    }
+    .options {   
+      grid-row: 2; 
+      background-color: #8ea604;
+      border: 1px solid black;
+      text-align: center;
+      color: white;
+      font-size: 22px;
+      transition: transform .2s;
+  }
+  
+  .options h3{
+      color: #bf3100;
+  }
+  .options img{
+      width: 70%;
+      align-items: center;
+      margin-right: 0.5in;
+      /* margin: 0.1in; */
+  }
+  
+  .options img:hover{
+    transform: scale(1.1);
+  }
 
-    .spotlight2 hr{
-        margin: 10px;
-    }
-
-
-    .spotlight3 {
-        grid-row: 3/4;
-        grid-column: 3/4;
-        border: 1px solid black;
-        background-color: #80CED7;
-        text-align: center;
-        color: white;
-        font-size: 16px;
-        /* padding: 0; */
-    }  
     
-    .spotlight3 h3{
-        color: yellow;
-        font-size: 18px;
-    }
-    .spotlight3 img{
-        width: 25%;
-        float: revert; 
-        padding: 0;
-    }
-    .spotlight3 hr{
-        margin: 10px;
-    }
- 
-
     h2 {
         text-align: left;
         color: white;
@@ -344,8 +264,11 @@ section.weather {
     .footer {
         display: grid;
         flex-wrap: wrap;
-        text-shadow: 1.5px 1.5px black;
+        text-shadow: 1.1px 1.1px black;
         font-size: 3rem;
+        background-color: #f5bb00;
+        color: navy;
+        width: 100%;
     }
     
     .logo {
@@ -380,400 +303,109 @@ section.weather {
         font-size: 22px;
     }
 
-    /* --------- Discover.html ----------------- */
-
-.demography {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-.demography h1{
-    margin: 1em;
-    text-align: center;
-  }
-  
-.demography figure {
-    margin: auto;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    max-width: 75%;
-    border: solid var(--accent1);
-    box-shadow: 5px 5px 10px #6f7364;
-    text-align: center;
-    transition: transform 0.2s;
-  }
-  
-.gallery {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: unset;
-    border:none;
-    margin: 1em;
-    height: auto;
-}
-main figcaption {
-    text-align: center;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 1cm;
-}
-
-.photo-card figcaption{
-    text-align: center;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 1cm;
-}
-  
-.photo-card img {
-    width: 100%;
-}
-  
-.demography img{
-    width: 110%;
-    margin-top: 2rem;
-    margin-bottom: 0.2cm;
-  }
-  
-.demography img[data-src] {
-    filter: blur(0.2em);
-  } 
-  
-.demography img {
-  filter: blur(0em);
-  transition: filter 0.5s;
-  }
-  
-.demography figcaption{
-    text-align: center;
-}
-
-.photo-card {
-    margin: auto;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    max-width: 75%;
-    border: solid var(--accent1);
-    background-color: var(--secondary);
-    box-shadow: 5px 5px 10px #6f7364;
-    text-align: center;
-    transition: transform 0.2s;
-  }
-  
-.photo-card p {
-    margin: 0.2cm;
-  }
-  
-  .demo-table {
-    margin-top: 1em;
-    border-collapse: collapse;
-  }
-  
-  .demo-table th, .demo-table td {
-    display: table-cell;
-    border: 1px solid black;
-    padding: 10px;
-  }
-  
-  .demo-table th {
-    font-size: 12px;
-    background-color: #ccdbdc;
-  }
-  
-  .demo-table th, .demo-table h3 {
-    color: var(--paragraph-color-on-color);
-  }
-
-
-
-    /* *****************************************
-                VISITS
-***************************************** */
-
-div.visits-div {
-    text-align: center;
-  }
-  
-  .label {
-      font-family: var(--paragraph-font);
-      font-weight: 700;
-  }
-  
-  #visits {
-      color: navy;
-  }
-  
-    /* *****************************************
-                Form
+     /* *****************************************
+                FRESH
 ***************************************** */
   
-  #memberForm {
+  #drinkform {
     display: flex;
     flex-direction: column;
-  }
-    
-  .memberHeader {
-    text-align: center;
-    margin: 1em;
+    margin-bottom: 0.2in;
   }
   
-  .memberForm fieldset{
-    margin: auto;
-    margin-top: 0.5cm;
+  .form-header {
+    text-align: center;
+    margin: 1em;
+    font-size: 35px;
+    color: #445ba9;
+  }
+  
+  .drinkform fieldset{
+    margin: 2rem 0;
     border: 1px solid #445ba9;
     border-radius: 12px;
     padding: .5rem 2%;
-    width: 90%;
+    background-color: #8ea604;
   }
   
-  .memberForm legend{    
+  .drinkform legend{    
     color: #445ba9;
     margin: 0 1rem;
     padding: 0 .5rem;
     font-weight: bold;
+    font-size: 25px;
   }
   
-  .memberForm input {
+  .drinkform input {
     border: 1px solid black;
     margin-bottom: .5rem;
     padding: 1rem;
     border-radius: 5px;
   }
   
-  .memberForm textarea {
+  .drinkform textarea {
     height: 30vh;
     border-radius: 5px;
     border: none;
   }
   
-  .memberForm label{
+  .drinkform label{
     display: flex;
     flex-direction: column;
   }
-  
-  .member{
-    display: inline;
-    margin-right: 10px;
-  }
-
   .top {
     text-align: left;
+    color: #445ba9;
   }
   
   .submitButton {
-    background-color: #445ba9;
+    background-color: #bf3100;
     margin: 0 auto;
-    margin-bottom: 1em;
+    margin-bottom: 0.2in;
     color: white;
     max-width: 200px;
     font-weight: bold;
   }
   
   .submitButton:hover {
-    background-color: white;
-    color: var(--accent1-color);
+    background-color: #8ea604;
+    color: white;
     border: var(--accent1-color) solid 1px;
   }
-  
-  .form-date {
-    display: none;
-    color: white;
-  }
-  
-  /* *****************************************
-                Table
-***************************************** */
-  
-  .membership {
-    border-collapse: collapse;
-    max-width: 95%;
-    margin: 30px auto;
-    font-size: .7em;
-  }
-  
-  .vertical {
-    writing-mode: vertical-lr;
-  }
-  
-  .membership th, .membership td {
-    border: 1px solid black;
-    padding: 8px;
-    font-size: 16px;
-  }
-  
-  .membership th {
-    font-size: 16px;
-    background-color: var(--primary-color);
-    color: var(--paragraph-color-on-color);
-  }
-  
-  .membership th, .membership h3 {
-    color: var(--paragraph-color-on-color);
-  }
-  
-/* *****************************************
-                Thank you
-***************************************** */
-  
-  .header-thanks {
-    text-align: center;
-    font-size: 20px;
-    margin: 0.5in;
-  }
-  
-  .thanks1 {
-    text-align: center;
-    font-size: 18px;    
-}
 
-.thanks2 {
-    margin: 1em;
-    font-size: 18px;
-  }
-
-/* *****************************************
-                Directory
-***************************************** */
-.grid-directory.list {
-	display: flex;
-	flex-direction: column;
-  width: 90%;
-}
-
-.grid-directory.list h2{
-    font-size: 18px;
-    color: black;
-}
-
-.grid-directory.list section {
+  .grid-images {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* flex-direction: column; */
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0.25rem;
-    font-size: 16px;
-    height: fit-content;
-    border: none;
-    align-items: center;
-    text-align: center;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* min-height: 500px; */
+    margin: 0;
+    row-gap: 10px;    
+    /* text-align: left; */
 }
-
-.grid-directory.list section img {
-	display: none;
-}
-
-.grid-directory.list section:nth-child(odd) {
-	background-color: lightgray;
-}
-
-.grid-directory.list a {
-  text-decoration: none;
-  font-family: var(--paragraph-font);
-  color: #445ba9;;
-}
-.grid-directory.list section:hover {
-    transform: none;
-}
-
-.grid-directory a {
-  font-size: 14px;
-  margin-top: 0.1cm;
-  margin-bottom: 0.2in;
-  color: #445ba9;
-}
-
-/**************************************/
-
-div.buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    width: 80%;
-    height: 30px;
-    margin: 1rem auto;
-    margin-bottom: 1cm;
-}
-
-button#grid , button#list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 1em;
-    width: 60px;
-    height: 60px;
-    border-color: var(--primary-color);
-}
-
-button#grid:hover, button#list:hover {
-    transform: scale(1.05);
-}
-
-button#grid:active, button#list:active {
-    background-color: var(--secondary-color);
-}
-
-button#grid img, button#list img {
-    align-items: center;
-    width: 100%;
-}
-
-.grid-directory {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-}
-
-.grid-directory section {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    background-color: #9AD1D4;
-    box-shadow: 5px 5px 10px #6f7364;
-    transition: transform 0.2s;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: none;
-}
-
-.grid-directory section:hover {
-    transform: scale(1.05);
-}
-
-.grid-directory img {
-    margin-bottom: 1rem;
-    width: 30%;
-    object-fit: cover;
-}
-
-.grid-directory h2 {
-    margin: 0.2cm;
-    font-size: 18px;
-}
-
-.grid-directory p {
-    font-size: 16px;
-}
-
-.directory {
-  margin-bottom: 2em;
-  width: 90%;
-  margin-left: 0.5in;
+.grid-images img{
+  width: 80%;
+  height: 80%;
+  padding: 0;
+  margin-top: 0.5in;
+  margin: 0 auto;
+  object-fit: cover;
 }
 
 /**********************/
       /* Contact */
 /**********************/
 
-.hero-contact img{
-  width: 100%;
+.hero-about img{
+  width: 50%;
   margin: 0;
   padding: 0;
-  margin-bottom: 0.2in;
+
+}
+.aboutus p{
+  color: #445ba9;
+  font-size: 22px;
+  padding: 0.2cm;
+  text-align: center;
 }
 
 .contact-section h2 {
@@ -783,64 +415,6 @@ button#grid img, button#list img {
   color: navy;
 }
 
-.contact-form h2 {
-  text-align: center;
-  font-size: 30px;
-  margin: 1em;
-  color: navy;
-}
-
-.contact-form fieldset{
-  background-color: var(--accent2-color);
-  padding: 1em;
-  margin: 2em;
-  margin-left: 3.5in;
-  margin-right: 3.5in;
-  color: var(--primary-color);
-  border: none;
-  border-radius: 5px;
-  font-family: var(--paragraph-font);
-  width: 60%;
-}
-
-.contact-form legend{
-  background-color: var(--accent1-color);
-  padding: 1em;
-  margin: 2em;
-  color: navy;
-  border-radius: 5px;
-  align-content: left;
-}
-
-.contact-form input {
-  border: none;
-  margin-bottom: .5rem;
-  padding: 1rem;
-  border-radius: 5px;
-}
-
-.contact-form textarea {
-  height: 30vh;
-  border-radius: 5px;
-  border: none;
-}
-
-.contact-form label{
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-form .submitBtn {
-  font-family: var(--paragraph-font);
-  background-color: var(--primary-color);
-  margin-top: 1em;
-  color: var(--accent2-color);
-}
-
-.contact-form .submitBtn:hover {
-  background-color: yellow;
-  color: navy;
-}
 
 .contact-section {
   margin: 0;
@@ -856,10 +430,9 @@ button#grid img, button#list img {
   margin: 2em;
 }
 
-.social-media img {
-  margin: 2px;
-  align-items: center;
-  float: none;
+.contact-section social-media {
+  margin: 2em;
+
 }
 
 .map iframe{
@@ -867,6 +440,6 @@ button#grid img, button#list img {
   height: 50vh;
   margin: 0.2in;
 }
-
+    
     
     } 

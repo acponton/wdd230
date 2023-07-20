@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body>
+    <!-- <div id="banner">
+        <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+    </div> -->
+    <header>
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                <a id="logoHome" href="index.html">
+                    <img class="logoHome" src="images/logo.png" alt="BF logo">
+                </a>
+            <h2>Bountiful Foods</h2>
+            <ul id="menuNav">
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+            </ul>        
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="facebook icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+
+            <!-- <time></time>
+            <aside></aside>
+            <p></p> -->
+        </nav>
+    </header>
+
+    
+
+    <main>
+        <h3 class="form-header">Order Form</h3>
+        
+        <form class="drinkform" method="get" action="thankyou.html">
+            <div id="drinkform">
+                <fieldset>
+                    <legend>Information</legend>
+                    <label class="top">First Name* <input type="text" name="fname" required></label>
+                    <!-- <label class="top">Last Name* <input type="text" name="lname" required></label>
+                    <label class="top">Business Position Title: <input type="text" name="position" pattern="[a-zA-Z\s\-]{7,}"></label> -->
+                    <label class="top">Email* <input type="email" name="email" placeholder="example@email.com" required></label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="(555) 555-5555" required></label>
+                    <label class="top">Pick your fruits*
+                        <select id="fruit1" class="choice1" name="fruit1" required>
+                                <option value="" disabled selected hidden>Please Select &#9662</option>
+                        </select>
+                        <select id="fruit2" class="choice2" name="fruit2" required>
+                            <option value="" disabled selected hidden>Please Select &#9662</option>
+                        </select>
+                        <select id="fruit3" class="choice3" name="fruit2" required>
+                            <option value="" disabled selected hidden>Please Select &#9662</option>
+                        </select>
+                    </label>
+                    <label class="top">Special Instructions <input type="text" name="name" required></label>
+                </fieldset>
+    
+                <input type="submit" value="Submit Order" class="submitButton">
+            </div>
+            <div class="grid-images">
+                <img src="images/dragonfruit.jpg" alt="dragonfruit">
+                <img src="images/watermelon.jpg" alt="watermelon">
+                <img src="images/banana.jpg" alt="banana">
+                <img src="images/berries.jpg" alt="berries">
+                <img src="images/citrus.jpg" alt="citrus">
+                <img src="images/kiwi.jpg" alt="kiwi">
+            </div>
+            <div class="info-req">
+                <div id="responses">
+                    <button onclick="cerrarDivEmergente()">X</button>
+                    <h1>Thank you for your order!</h1>
+                </div>
+                
+            </div>
+            <div>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="information">
+            <a id="logo_footer" href="index.html"></a>
+            <img class="logo" src="images/logo.png" alt="logo BF">
+            <h2>Bountiful Foods</h2>
+        </div>
+        <div class="address">
+            <!-- <p>803 Joliet Road</p> -->
+            <p>Carlsbad, California</p>
+        </div>
+        <div class="contact">
+            <p>info@bountifulfoods.com</p>
+            <p>(708) 9741450</p>
+            <p><a class="location" href="https://www.google.com/maps/place/Carlsbad,+CA/@33.1215196,-117.287802,12z/data=!3m1!4b1!4m6!3m5!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.1580933!4d-117.3505939!16zL20vMHI0d24?entry=ttu">📍 Location Map</a></p>
+        </div>
+        <p id="copyright">&copy; <span id="year"></span> Bountiful Foods | Andrea C. Ponton | WDD 230 Final Project | Last Modification: <span id="updated-time"></span></p>
+    </footer>
+    <script src="scripts/time.js"></script>
+    <script src="scripts/button.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/lazy_load.js"></script>
+    <script src="scripts/drinks.js"></script>
+    </body>
+    </html>   
